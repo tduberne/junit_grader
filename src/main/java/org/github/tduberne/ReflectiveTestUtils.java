@@ -1,11 +1,11 @@
-package thibautd.junitgrading;
+package org.github.tduberne;
 
 import org.junit.Assert;
 
 import java.util.Arrays;
 
 /**
- * @author thibautd
+ * @author org.github.tduberne.thibautd
  */
 public class ReflectiveTestUtils {
 	public static void assertImplementsInterface( Class<?> clazz , Class<?> interfaze ) {

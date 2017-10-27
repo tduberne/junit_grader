@@ -1,4 +1,4 @@
-package thibautd.junitgrading.grading;
+package org.github.tduberne.grading;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

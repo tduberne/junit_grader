@@ -1,4 +1,4 @@
-package thibautd.junitgrading.grading;
+package org.github.tduberne.grading;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

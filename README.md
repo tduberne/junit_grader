@@ -35,7 +35,9 @@ Running this test will create a file grading.txt at the root of the project,
 with the following content:
 
 > total score on all scored exercises: [0 / 3]
+>
 >   com.acme.rocketscienceexam.MyTest got score [0 / 3]
+>
 >       testStuff got score [0 / 3]
 
 This will also be printed to the console after each test.

@@ -30,5 +30,16 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>bintray</id>
+            <url>https://api.bintray.com/maven/tduberne/tduberne/junit_grader</url>
+        </repository>
+        <snapshotRepository>
+            <id>oss-jfrog-artifactory</id>
+            <name>artifactory-snapshots</name>
+            <url>http://oss.jfrog.org/oss-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>

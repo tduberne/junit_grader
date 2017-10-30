@@ -3,6 +3,32 @@ JUnit Grader
 This is a small collection of utilities to help grading Java assignments using junit.
 I am not related to the JUnit team in any way.
 
+Adding as a dependency
+----------------------
+
+To add as a dependency in a maven project, add the following to your pom:
+
+```xml
+   <repositories>
+        <repository>
+            <id>artifactory</id>
+            <url>http://oss.jfrog.org/libs-snapshot</url>
+        </repository>
+    </repositories>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.github.tduberne</groupId>
+            <artifactId>junitgrader</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+```
+
+As I implement additional methods as needed, there are only snapshots for the moment.
+I will freeze things in a release only if I make change that break the "API".
+
 How does this work
 ------------------
 

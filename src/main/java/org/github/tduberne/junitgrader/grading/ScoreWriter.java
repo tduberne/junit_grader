@@ -1,4 +1,4 @@
-package org.github.tduberne.grading;
+package org.github.tduberne.junitgrader.grading;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

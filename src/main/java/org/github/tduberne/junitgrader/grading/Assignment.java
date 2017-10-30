@@ -1,4 +1,4 @@
-package org.github.tduberne.grading;
+package org.github.tduberne.junitgrader.grading;
 
 import org.junit.runner.Description;
 
@@ -40,9 +40,9 @@ class Assignment {
 				.sum();
 	}
 
-	private int calcScore() {
+	private double calcScore() {
 		return exercises.values().stream()
-				.mapToInt( Exercise::calcScore )
+				.mapToDouble( Exercise::calcScore )
 				.sum();
 	}
 
@@ -87,17 +87,17 @@ class Assignment {
 			}
 		}
 
-		public int calcScore() {
+		public double calcScore() {
 			return questions.values().stream()
-					.mapToInt( q -> q.points )
+					.mapToDouble( q -> q.points )
 					.sum();
 		}
 	}
 
 	public static class Question {
 		private final String methodName;
-		private final int maxPoints;
-		private int points = 0;
+		private final double maxPoints;
+		private double points = 0;
 
 		public Question( Method method , GradeValue value ) {
 			this.methodName = method.getName();
@@ -105,7 +105,7 @@ class Assignment {
 		}
 
 		public void notifySuccess( final boolean success ) {
-			points = success ? maxPoints : 0;
+			points = success ? maxPoints : 0d;
 		}
 
 		public String scoreInfo() {

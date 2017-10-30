@@ -1,4 +1,4 @@
-package org.github.tduberne.grading;
+package org.github.tduberne.junitgrader.grading;
 
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;

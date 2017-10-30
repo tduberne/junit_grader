@@ -1,4 +1,4 @@
-package org.github.tduberne.grading;
+package org.github.tduberne.junitgrader.grading;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -8,5 +8,5 @@ import java.lang.annotation.RetentionPolicy;
  */
 @Retention( RetentionPolicy.RUNTIME )
 public @interface GradeValue {
-	int value();
+	double value();
 }

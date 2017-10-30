@@ -1,4 +1,4 @@
-package org.github.tduberne;
+package org.github.tduberne.junitgrader;
 
 import org.junit.Assert;
 

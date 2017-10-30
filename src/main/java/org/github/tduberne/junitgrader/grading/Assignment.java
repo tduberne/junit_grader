@@ -34,9 +34,9 @@ class Assignment {
 		return b.toString();
 	}
 
-	private int calcMaxScore() {
+	private double calcMaxScore() {
 		return exercises.values().stream()
-				.mapToInt( e -> e.maxPoints )
+				.mapToDouble( e -> e.maxPoints )
 				.sum();
 	}
 
@@ -48,14 +48,14 @@ class Assignment {
 
 	public static class Exercise {
 		private final String className;
-		private final int maxPoints;
+		private final double maxPoints;
 
 		private final Map<String,Question> questions = new HashMap<>();
 
 		public Exercise( Class<?> testClass ) {
 			this.className = testClass.getCanonicalName();
 
-			int sum = 0;
+			double sum = 0;
 			for ( Method m : testClass.getMethods() ) {
 				GradeValue value = m.getAnnotation( GradeValue.class );
 				if ( value != null ) {

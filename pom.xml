@@ -38,7 +38,7 @@
         <snapshotRepository>
             <id>oss-jfrog-artifactory</id>
             <name>artifactory-snapshots</name>
-            <url>http://oss.jfrog.org/oss-snapshot-local</url>
+            <url>http://oss.jfrog.org/oss-snapshot-local;publish=1</url>
         </snapshotRepository>
     </distributionManagement>
 
